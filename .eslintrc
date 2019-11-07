@@ -1,0 +1,6 @@
+{
+  "extends": "@threadws/eslint-config-thread",
+  "env": {
+    "jest": true
+  }
+}

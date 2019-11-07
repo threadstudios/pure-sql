@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@threadws/eslint-config-thread": "^1.0.0",
+    "fs-extra": "^8.1.0",
+    "mysql": "^2.17.1",
+    "puresql": "^1.7.1"
+  },
+  "name": "@threadws/puresql",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Paul Westerdale <paul@threadstud.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
