@@ -37,6 +37,13 @@ class ThreadSQL {
     const result = await this.__get(query, params);
     return response.getFirst(result);
   }
+
+  // eslint-disable-next-line class-methods-use-this
+  async combine(first, secondary) {
+    const result = await first;
+    const finalResult = await secondary(result);
+    return finalResult;
+  }
 }
 
 module.exports = new ThreadSQL();
