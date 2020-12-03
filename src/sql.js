@@ -15,7 +15,7 @@ class ThreadSQL {
           password: process.env.SQL_PASSWORD,
           database: process.env.SQL_DATABASE
         };
-    this.connection = mysql.createConnection(sqlParams);
+    this.connection = process.env.SQL_USE_POOL ? mysql.createPool(sqlParams) : mysql.createConnection(sqlParams);
     this.adapter = puresql.adapters.mysql(this.connection);
   }
 
