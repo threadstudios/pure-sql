@@ -6,7 +6,7 @@
     "puresql": "^1.7.1"
   },
   "name": "@threadws/puresql",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "index.js",
   "author": "Paul Westerdale <paul@threadstud.io>",
   "license": "MIT",
